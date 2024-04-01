@@ -1,7 +1,13 @@
-body {
-    font-family: sans-serif;
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -17,8 +23,35 @@ h1 {
 }
 
 section.content {
+    flex: 1;
     padding: 20px;
     background-color: #D7D8C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper img {
+    margin: 0 10px; /* Add some spacing between images */
+    transform-style: preserve-3d;
+}
+
+.wrapper img:nth-child(2) {
+    transform: scale(0.9);
+}
+
+.wrapper img:first-child {
+    transform: perspective(1000px) rotateY(20deg);
+}
+
+.wrapper img:last-child {
+    transform: perspective(1000px) rotateY(-20deg);
 }
 
 h2 {
@@ -48,5 +81,9 @@ p {
 footer {
     background-color: #f0f0f0;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
 }
