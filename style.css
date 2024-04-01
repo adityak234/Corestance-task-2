@@ -13,27 +13,32 @@ header {
 h1 {
     font-size: 2em;
     margin: 0;
+    color: #495A4A;
 }
 
 section.content {
     padding: 20px;
+    background-color: #D7D8C4;
 }
 
 h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #494924;
 }
 
 p {
     line-height: 1.5;
+    color: #4E4E4E;
 }
 
 .more {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #4D5628;
     color: #fff;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .more:hover {
