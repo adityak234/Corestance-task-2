@@ -1,13 +1,10 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+
 
 body {
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d4c8;
 }
 
 header {
@@ -19,71 +16,78 @@ header {
 h1 {
     font-size: 2em;
     margin: 0;
-    color: #495A4A;
 }
 
 section.content {
-    flex: 1;
     padding: 20px;
-    background-color: #D7D8C4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.wrapper img {
-    margin: 0 10px; /* Add some spacing between images */
-    transform-style: preserve-3d;
-}
-
-.wrapper img:nth-child(2) {
-    transform: scale(0.9);
-}
-
-.wrapper img:first-child {
-    transform: perspective(1000px) rotateY(20deg);
-}
-
-.wrapper img:last-child {
-    transform: perspective(1000px) rotateY(-20deg);
+   
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 3em;
     margin-bottom: 10px;
-    color: #494924;
 }
 
 p {
     line-height: 1.5;
-    color: #4E4E4E;
+    
 }
 
 .more {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4D5628;
     color: #fff;
+    background-color: #4D5628;
     text-decoration: none;
-    border-radius: 5px;
+    margin: 20px;
 }
 
 .more:hover {
     background-color: #444;
 }
 
-footer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
+.div2{
+    
+    display: grid;
+    grid-template-rows: 300px;
+    grid-auto-flow: column;
+    grid-gap: 55px;
+    overflow: auto;
+    scroll-snap-type: x mandatory; 
+    margin-left: 100px; 
+    align-items: center;
 }
+.div1{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.div1::after , .div1::before{
+
+    content: "";
+    display: block;
+    background-color: #d3d4c8;
+    width: calc(100vw + 2 * 60px);
+    height: 130px;
+    position: absolute;
+    border-radius: 50%;
+    left: calc(-1 * 60px);
+    right: calc(-1 * 60px);
+}
+
+.div1::before{
+    top: calc(-0.6 * 120px);
+}
+.div1::after{
+    bottom: calc(-0.6 * 120px);
+  
+}
+
+.iclass{
+    height: 300px;
+    width: 320px;
+}
+
+
+
