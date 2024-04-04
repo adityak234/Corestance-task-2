@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body {
     background-color: #d3d4c8;
     overflow-x: hidden;
@@ -13,32 +11,33 @@ header {
 }
 
 h1 {
-    font-family: 'Times new roman';
+    font-family: "Tinos";
     font-size: 20px;
     color: #495a4a;
 }
 
 
 h2 {
+    font-family: "Gupter";
     margin-top: 5px;
     font-size: 3em;
     margin-bottom: 10px;
     color: #494924;
-    font-family: 'Gupter medium';
 }
 
 p {
-    font-family: 'gabriola';
-    font-size: 23px;
+    font-family: "gabriela";
+    font-size:16px;
     font-weight: 200;
-    width: 920px;
-    line-height: 1.6;
+    width: 1000px;
+    line-height: 1.4;
     color: #4E4E4E;
     padding: 5px;
     margin: 5px;
 }
 
 .more {
+    font-family: "carlito";
     width: 90px;
     border-radius: 5px;
     display: inline-block;
