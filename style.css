@@ -1,5 +1,5 @@
 body {
-    background-color: #d3d4c8;
+    background-color: #d7d8c4;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -11,33 +11,39 @@ header {
 }
 
 h1 {
-    font-family: "Tinos";
+    font-family: "Gupter";
     font-size: 20px;
-    color: #495a4a;
+    color: #91927c;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 
 h2 {
     font-family: "Gupter";
-    margin-top: 5px;
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 59px;
+    font-size: 50px;
     color: #494924;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 p {
-    font-family: "gabriela";
-    font-size:16px;
-    font-weight: 200;
-    width: 1000px;
-    line-height: 1.4;
+    font-family: "Halant";
+    font-size: 15px;
+    font-weight: 400;
+    width: 981px;
+    height: 52px;
+    line-height: 26px;
     color: #4E4E4E;
     padding: 5px;
     margin: 5px;
+    letter-spacing: 3%;
 }
 
 .more {
-    font-family: "carlito";
+    font-family: "Halant";
     width: 90px;
     border-radius: 5px;
     display: inline-block;
@@ -83,7 +89,7 @@ section.content {
 .div1::before {
     content: "";
     display: block;
-    background-color: #d3d4c8;
+    background-color: #d7d8c4;
     width: calc(100vw + 2 * 60px);
     height: 130px;
     position: absolute;
